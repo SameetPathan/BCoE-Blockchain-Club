@@ -4,9 +4,9 @@ const ctx = canvas.getContext("2d");
 
 
 let w = canvas.width = window.innerWidth;
-let h = canvas.height = 1400;
+let h = canvas.height = 1500;
 if (canvas.height < 300) {
-  h = canvas.height = 1400;
+  h = canvas.height = 1500;
 }
 let cols = Math.floor(w / 20) + 1;
 let ypos = Array(cols).fill(0);
