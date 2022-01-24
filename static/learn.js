@@ -4,9 +4,12 @@ const ctx = canvas.getContext("2d");
 
 
 let w = canvas.width = window.innerWidth;
-let h = canvas.height = 1650;
-if (canvas.height < 300) {
-  h = canvas.height = 1650;
+let h = canvas.height=1000;
+
+let hf = window.innerHeight;
+
+if (hf == 740)  {
+  h = canvas.height = 2000;
 }
 let cols = Math.floor(w / 20) + 1;
 let ypos = Array(cols).fill(0);
@@ -37,12 +40,8 @@ function resize_canvas(){
   if (canvas.width  < window.innerWidth) {
     w = canvas.width =window.innerWidth ;
   }
-  if (canvas.height < 600) {
-    h = canvas.height = 600;
-  }
-  if (canvas.height < 300) {
-    h = canvas.height = 300;
-  }
+  
+  
   cols = Math.floor(w / 20) + 1;
   ypos = Array(cols).fill(0);
 }
