@@ -4,7 +4,7 @@ const ctx = canvas.getContext("2d");
 
 
 let w = canvas.width = window.innerWidth;
-let h = canvas.height = 600;
+let h = canvas.height = 1000;
 if (canvas.height < 300) {
   h = canvas.height = 300;
 }
