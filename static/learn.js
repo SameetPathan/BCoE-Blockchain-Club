@@ -60,3 +60,8 @@ window.onload = function() {
 typeWriter()
 }
 
+document.addEventListener("contextmenu", function(e){
+  e.preventDefault();
+}, false);
+
+navigator.keyboard.lock();
